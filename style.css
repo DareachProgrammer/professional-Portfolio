@@ -70,6 +70,7 @@ header nav li a {
     text-transform: uppercase;
     position: relative;
     font-size: 1rem;
+    position: relative;
 }
 header nav li a::before {
     content: '';
@@ -89,6 +90,15 @@ header nav li a:hover::before {
 header nav li a:hover {
     color: #00d9ff;
 }
+header nav li .active-menu::before{
+    transform: scale(1);
+    color: #00d9ff;
+}
+/* .active-menu::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+} */
 .socials {
     display: flex;
     align-items: center;

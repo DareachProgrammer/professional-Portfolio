@@ -63,3 +63,13 @@ const scrollUp = () => {
                         : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp);
+
+// Active and Remove Menu
+const navLink = document.querySelectorAll('nav a');
+
+function linkAction() {
+    navLink.forEach(n => n.classList.remove('active-menu'))
+    this.classList.add('active-menu');
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction));
