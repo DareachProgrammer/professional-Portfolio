@@ -69,6 +69,7 @@ header nav li a {
     color: white;
     text-transform: uppercase;
     position: relative;
+    font-size: 1rem;
 }
 header nav li a::before {
     content: '';
@@ -608,8 +609,11 @@ main{
     header {
         padding: 20px 5%;
     }
+    header nav li {
+        margin: 0 15px;
+    }
     main {
-        padding: 0 5%;
+        padding: 0 3%;
     }
     .project-grid {
         display: grid;
@@ -638,11 +642,19 @@ main{
    }
    header nav li {
     display: block;
-    margin: 20px;
+    padding: 15px;
     text-align: center;
+    transition: all 0.3s ease;
+    margin: 0;
+   }
+   header nav li:hover{
+    background: #00d9ff;
    }
     header nav li a {
         color: #020617;
+    }
+    header nav li a:hover{
+        color: #000;
     }
     header nav.open {
         width: 100%;
@@ -690,6 +702,7 @@ main{
     /* About Section  */
     .about-content {
         grid-template-columns: 1fr;
+        place-items: center;
     }
     .bio-details {
         grid-template-columns: 1fr;

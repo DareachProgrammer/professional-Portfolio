@@ -28,9 +28,9 @@ filterBtns.forEach((btn) => {
         filterBtns.forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
 
-        projectItems.forEach((items) =>{
+        projectItems.forEach((items) => {
             if (filter === "all" || items.getAttribute("data-category") === filter){
-                items.style.dispay = "block";
+                items.style.display = "block";
                 setTimeout(() => {
                     items.style.opacity = "1";
                     items.style.transform = "scale(1)";
@@ -39,7 +39,7 @@ filterBtns.forEach((btn) => {
                 items.style.opacity = "0";
                 items.style.transform = "scale(0.8)";
                 setTimeout(() => {
-                    items.style.dispay = "none";
+                    items.style.display = "none";
                 }, 300);
             }
         })
