@@ -68,8 +68,13 @@ window.addEventListener('scroll', scrollUp);
 const navLink = document.querySelectorAll('nav a');
 
 function linkAction() {
-    navLink.forEach(n => n.classList.remove('active-menu'))
+    navLink.forEach(n => n.classList.remove('active-menu')) 
     this.classList.add('active-menu');
+
+    //remove menu mobile
+    const navMenu = document.querySelector('.open');
+    navMenu.classList.remove('open');
+    console.log(navMenu)
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
