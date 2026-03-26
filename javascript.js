@@ -52,4 +52,14 @@ const navbar = document.querySelector("header nav");
 menu.addEventListener("click", (e) => {
     e.preventDefault();
     navbar.classList.toggle("open"); 
-})
+});
+
+// Show Scroll up 
+const scrollUp = () => {
+    const scrollUp = document.getElementById("scrollup");
+
+    //when the scroll is higher than 350 vh , add the show scroll class 
+    this.scrollY >= 800 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp);
