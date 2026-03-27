@@ -81,7 +81,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 // TYPE EFFECT 
 var typingEffect = new Typed(".typeText", {
-    strings: ["Ren <br> Dareach"],
+    strings: ["Ren <br> Dareach","Coder"],
     loop: true,
     typeSpeed: 100,
     backSpeed: 80,
