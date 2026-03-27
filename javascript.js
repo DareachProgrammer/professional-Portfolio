@@ -87,3 +87,21 @@ var typingEffect = new Typed(".typeText", {
     backSpeed: 80,
     backDelay: 2000,
 });
+
+/* SCROLL REVEAL ANIMATION */
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true,
+});
+
+// HOME
+
+sr.reveal('.hero-text', {})
+sr.reveal('.btn', {delay: 100})
+sr.reveal('.hero-img', {delay: 150})
+sr.reveal('.feature-card', {delay: 200})
+sr.reveal('.section-label', {delay: 300})
+sr.reveal('.section-title', {delay: 350})
+
