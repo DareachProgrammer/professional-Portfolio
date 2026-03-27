@@ -353,7 +353,7 @@ main{
 }
 .skills-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
     margin-top: 100px;
 }
@@ -361,6 +361,24 @@ main{
    margin-bottom: 30px; 
    color: white;
 }
+.image-skills {
+    width: 250px;
+    height: 250px;
+    justify-self: center;
+    margin-bottom: 15px;
+}
+.image-skills img{
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.image-skills img:hover{
+    box-shadow: 0 10px 25px #0099ff;
+    transform: translateY(-2px);
+}
+
 .skill-header {
     display: flex;
     justify-content: space-between;
@@ -628,6 +646,9 @@ main{
     }
     .contact-content {
         grid-template-columns: 1fr;
+    }
+    .skills-grid{
+        grid-template-columns: 1fr 1fr;
     }
 }
 

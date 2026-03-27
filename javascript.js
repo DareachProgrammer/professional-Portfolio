@@ -106,6 +106,7 @@ sr.reveal('.hero-img', {delay: 300})
 sr.reveal('.section-title', {delay: 350})
 sr.reveal('.project-filters', {delay: 400})
 sr.reveal('.project-image', {delay: 500})
+sr.reveal('.skill-item', {delay: 500})
 
 
 
