@@ -100,8 +100,39 @@ const sr = ScrollReveal({
 
 sr.reveal('.hero-text', {})
 sr.reveal('.btn', {delay: 100})
-sr.reveal('.hero-img', {delay: 150})
 sr.reveal('.feature-card', {delay: 200})
-sr.reveal('.section-label', {delay: 300})
+sr.reveal('.section-label', {delay: 250})
+sr.reveal('.hero-img', {delay: 300})
 sr.reveal('.section-title', {delay: 350})
+sr.reveal('.project-filters', {delay: 400})
+sr.reveal('.project-image', {delay: 500})
+
+
+
+// About Info And Skills left Contact Map
+const srLeft = ScrollReveal({
+    origin: 'left',
+    distance: '80px',
+    duration: 2000,
+    reset: true,
+});
+
+srLeft.reveal('.about-image', {delay: 100})
+srLeft.reveal('.skill-column-left', {delay: 100})
+srLeft.reveal('.map-image', {delay: 100})
+
+// About Info And Skill Right
+const srRight = ScrollReveal({
+    origin: 'right',
+    distance: '80px',
+    duration: 2000,
+    reset: true,
+});
+
+srRight.reveal('.bio-details', {delay: 100})
+srRight.reveal('.bio-text', {delay: 100})
+srRight.reveal('.bio-title', {delay: 100})
+srRight.reveal('.skill-column-right', {delay: 100})
+srRight.reveal('.contact-form', {delay: 100})
+
 
