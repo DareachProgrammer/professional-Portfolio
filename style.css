@@ -606,6 +606,11 @@ main{
 }
 
 /* Responsiveness  */
+@media screen and (min-width:800px) {
+    .socials-footer {
+        display: none;
+    }
+}
 @media (max-width: 1000px) {
     header {
         padding: 20px 5%;
@@ -735,6 +740,12 @@ main{
     }
     .socials {
         display: none;
+    }
+    .socials-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
     }
 }
 
