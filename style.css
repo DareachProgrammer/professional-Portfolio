@@ -360,6 +360,7 @@ main{
 .skill-item {
    margin-bottom: 30px; 
    color: white;
+   align-self: center;
 }
 .image-skills {
     width: 200px;
