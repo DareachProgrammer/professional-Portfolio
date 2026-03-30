@@ -361,6 +361,7 @@ main{
    margin-bottom: 30px; 
    color: white;
    align-self: center;
+   width: 100%;
 }
 .image-skills {
     width: 200px;
